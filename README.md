@@ -1,4 +1,4 @@
-# 💫 About Me:
+# 💫 This is DoctorGuidance:
 I am a multi-passionate creator, innovator, and an introverted, meticulous Beholder. My world revolves around the intersection of medicine, technology, and art.<br><br>* 🩺 **Medical Student** on a journey to understand the human body.<br>* 💡 **Entrepreneur** and the ideator behind several business ventures.<br>* 🎨 **Designer** with a passion for creating beautiful and functional things.<br>* 🤖 **Developer** with experience in building various Telegram bots.<br>* 🧠 **AI Enthusiast** fascinated by the future of intelligent systems.<br>* 💻 **Technophile** who is always exploring what's next.<br><br>When I'm not studying or creating, you can find me:<br><br>* 🎮 Gaming or diving into a new 🎬 movie.<br>* 🎙️ Practicing the art of declamation.<br>* 🌌 Enjoying nature, clouds, cats, the sky, and the cosmos.
 
 
