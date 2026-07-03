@@ -69,23 +69,13 @@ I live at the intersection where a **stethoscope meets a terminal** — studying
 ## 📊 Lab Results
 
 <p align="center">
-  <img src="assets/metrics.svg" width="100%" alt="GitHub metrics — appears after the Generate Metrics workflow runs"/>
+  <img src="assets/stats.svg" width="100%" alt="Lab report — 3,986 contributions in 12 months, 41-day streak, peak 72/day"/>
 </p>
 
-## 🧬 Contribution DNA
+## 🫀 Contribution ECG
 
 <p align="center">
-  <img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D contribution graph — appears after the 3D workflow runs"/>
-</p>
-
-## 🐍 Contribution Snake
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DoctorGuidance/DoctorGuidance/output/snake-dark.svg"/>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DoctorGuidance/DoctorGuidance/output/snake.svg"/>
-    <img src="https://raw.githubusercontent.com/DoctorGuidance/DoctorGuidance/output/snake-dark.svg" width="100%" alt="Snake — appears after the Snake workflow runs"/>
-  </picture>
+  <img src="assets/contrib.svg" width="100%" alt="Annual cardiac rhythm — a year of contributions drawn as an ECG strip with neon heatmap"/>
 </p>
 
 <img src="assets/divider.svg" width="100%" alt=""/>

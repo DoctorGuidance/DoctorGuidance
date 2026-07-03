@@ -1,0 +1,50 @@
+<svg width="900" height="340" viewBox="0 0 900 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="sgrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#0b1f30" stroke-width="1" fill="none"/>
+    </pattern>
+  </defs>
+  <style>
+    .bar { transform-origin: 470px 0; animation: fill 1.4s cubic-bezier(.2,.8,.2,1) both; }
+    .b1 { animation-delay:.15s; } .b2 { animation-delay:.3s; } .b3 { animation-delay:.45s; } .b4 { animation-delay:.6s; }
+    @keyframes fill { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  </style>
+  <rect width="900" height="340" rx="18" fill="#040b14"/>
+  <rect width="900" height="340" rx="18" fill="url(#sgrid)" opacity="0.5"/>
+  <rect x="1" y="1" width="898" height="338" rx="17" stroke="#123049" stroke-width="2"/>
+  <path d="M1 18 A17 17 0 0 1 18 1 H882 A17 17 0 0 1 899 18 V46 H1 Z" fill="#081a2c"/>
+  <line x1="1" y1="46" x2="899" y2="46" stroke="#123049" stroke-width="1.5"/>
+  <text x="24" y="29" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#c9e4f5">LAB REPORT — DEVELOPER SEROLOGY PANEL</text>
+  <text x="876" y="29" text-anchor="end" font-family="'Courier New',monospace" font-size="12" fill="#5b7a93">PATIENT: <tspan fill="#00e5a0" font-weight="bold">DOCTORGUIDANCE</tspan></text>
+  <text x="42" y="88" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#8fb3cc">CONTRIBUTIONS / 12 MO</text>
+  <text x="330" y="88" font-family="'Courier New',monospace" font-size="17" font-weight="bold" fill="#00e5a0">3,986</text>
+  <rect x="470" y="76" width="250" height="9" rx="4.5" fill="#0c1e2e"/>
+  <rect x="470" y="76" width="230" height="9" rx="4.5" fill="#00e5a0" class="bar b0"/>
+  <text x="470" y="101" font-family="'Courier New',monospace" font-size="10" fill="#5b7a93">ELEVATED ↑ — CHRONIC BUILDER PATTERN</text>
+  <line x1="42" y1="110" x2="858" y2="110" stroke="#0d2438" stroke-width="1"/>
+  <text x="42" y="134" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#8fb3cc">LONGEST STREAK</text>
+  <text x="330" y="134" font-family="'Courier New',monospace" font-size="17" font-weight="bold" fill="#00b4d8">41 DAYS</text>
+  <rect x="470" y="122" width="250" height="9" rx="4.5" fill="#0c1e2e"/>
+  <rect x="470" y="122" width="200" height="9" rx="4.5" fill="#00b4d8" class="bar b1"/>
+  <text x="470" y="147" font-family="'Courier New',monospace" font-size="10" fill="#5b7a93">ACTIVE ● — ONGOING AS OF JUL 2026</text>
+  <line x1="42" y1="156" x2="858" y2="156" stroke="#0d2438" stroke-width="1"/>
+  <text x="42" y="180" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#8fb3cc">PEAK OUTPUT</text>
+  <text x="330" y="180" font-family="'Courier New',monospace" font-size="17" font-weight="bold" fill="#ffd166">72 / DAY</text>
+  <rect x="470" y="168" width="250" height="9" rx="4.5" fill="#0c1e2e"/>
+  <rect x="470" y="168" width="180" height="9" rx="4.5" fill="#ffd166" class="bar b2"/>
+  <text x="470" y="193" font-family="'Courier New',monospace" font-size="10" fill="#5b7a93">ACUTE CODING EPISODE (2025-11-30)</text>
+  <line x1="42" y1="202" x2="858" y2="202" stroke="#0d2438" stroke-width="1"/>
+  <text x="42" y="226" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#8fb3cc">ACTIVE DAYS</text>
+  <text x="330" y="226" font-family="'Courier New',monospace" font-size="17" font-weight="bold" fill="#b388ff">234 / 370</text>
+  <rect x="470" y="214" width="250" height="9" rx="4.5" fill="#0c1e2e"/>
+  <rect x="470" y="214" width="158" height="9" rx="4.5" fill="#b388ff" class="bar b3"/>
+  <text x="470" y="239" font-family="'Courier New',monospace" font-size="10" fill="#5b7a93">63% — HEALTHY WORK-LIFE PERFUSION</text>
+  <line x1="42" y1="248" x2="858" y2="248" stroke="#0d2438" stroke-width="1"/>
+  <text x="42" y="272" font-family="'Courier New',monospace" font-size="14" font-weight="bold" fill="#8fb3cc">PUBLIC REPOS</text>
+  <text x="330" y="272" font-family="'Courier New',monospace" font-size="17" font-weight="bold" fill="#ff5d8f">5</text>
+  <rect x="470" y="260" width="250" height="9" rx="4.5" fill="#0c1e2e"/>
+  <rect x="470" y="260" width="105" height="9" rx="4.5" fill="#ff5d8f" class="bar b4"/>
+  <text x="470" y="285" font-family="'Courier New',monospace" font-size="10" fill="#5b7a93">radcases · gereh · BiliCalc · xyzChess</text>
+  <line x1="42" y1="294" x2="858" y2="294" stroke="#0d2438" stroke-width="1"/>
+  <text x="42" y="326" font-family="'Courier New',monospace" font-size="11" fill="#3d5a73">IMPRESSION: <tspan fill="#8fb3cc">Multi-passionate overachiever. TS/JS seropositive. No treatment indicated — continue current regimen.</tspan></text>
+</svg>

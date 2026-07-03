@@ -1,28 +1,35 @@
-# 🚀 راهنمای راه‌اندازی پروفایل
+# 🚀 راهنمای پروفایل
 
-## قدم ۱ — push
+## وضعیت فعلی
+
+⚠️ اکانت گیت‌هابت پیام «locked due to a billing issue» میده و **GitHub Actions اجرا نمیشه**. به همین خاطر:
+
+- کارت آمار (Lab Results) و نوار ECG سالانه (Contribution ECG) به‌صورت **استاتیک از دیتای واقعی پروفایلت** ساخته و کامیت شدن — به هیچ سرویس و Action ای وابسته نیستن و برای همه (از جمله ایران) لود می‌شن.
+- workflowهای مار/metrics/گراف سه‌بعدی حذف شدن که ایمیل fail برات نیاد.
+
+## فعال‌سازی
 
 ```bash
 cd "D:\Ershad Zolfi\programming\coding with Gemini\DoctorGuidance"
 git push origin main
 ```
 
-## قدم ۲ — فعال‌سازی Actions (یه بار)
+همین. بعد از push پروفایلت کامله — هیچ قدم دیگه‌ای لازم نیست.
 
-1. **Settings → Actions → General → Workflow permissions** → گزینه **Read and write permissions** → Save.
-2. تب **Actions** → هر سه workflow رو یه بار دستی **Run workflow** بزن:
-   - `Generate Metrics` → فایل `assets/metrics.svg` رو می‌سازه (جایگزین کارت‌های vercel که برای IP ایران بلاک بودن)
-   - `Generate 3D Contribution Graph` → گراف سه‌بعدی night-rainbow
-   - `Generate Snake Animation` → برنچ `output` و مار 🐍
-3. از این به بعد هر شب خودکار آپدیت می‌شن.
+## رفع قفل اکانت (اختیاری ولی توصیه‌شده)
 
-## چرا دیگه هیچی broke نمیشه؟
+1. برو به `github.com/settings/billing` و ببین چه خطایی نشون میده.
+2. از `support.github.com` تیکت بزن (برای flagهای تحریمی معمولاً با appeal حل میشه — گیت‌هاب از ۲۰۲۱ سرویس‌های رایگان رو برای ایران آزاد کرده).
+3. بعد از رفع قفل بگو تا workflowهای خودکار (مار، metrics روزانه، گراف سه‌بعدی) رو برگردونم.
 
-کارت‌های قبلی (stats/streak/languages) از vercel.app لود می‌شدن که برای کاربرای ایران بلاکه. الان همه‌چیز **داخل خود ریپو** تولید و کامیت میشه — فقط این‌ها خارجی موندن که رو Cloudflare هستن و مشکلی ندارن: skillicons، shields.io و شمارنده بازدید.
+## به‌روزرسانی آمار
+
+کارت‌های آمار استاتیک‌ان (اسنپ‌شات از امروز). هر وقت خواستی تازه شن، فقط بگو «آمار پروفایل رو رفرش کن» — از API عمومی می‌خونم و دوباره می‌سازم.
 
 ## شخصی‌سازی
 
-- متن هدر / مقادیر مانیتور: `assets/header.svg` و `assets/vitals.svg`
+- هدر / مانیتور vitals: `assets/header.svg` و `assets/vitals.svg`
 - نقش‌های چرخشی: `assets/roles.svg`
-- کارت فارسی (فونت وزیر): `assets/fa-about.svg` — متن‌ها به path تبدیل شدن؛ برای تغییر متن بگو تا دوباره تولیدش کنم
-- آیکون‌های تک‌استک: پارامتر `i=` توی README از [skillicons.dev](https://skillicons.dev)
+- کارت فارسی (فونت وزیر، تبدیل‌شده به path): `assets/fa-about.svg`
+- کارت آمار و ECG سالانه: `assets/stats.svg` و `assets/contrib.svg`
+- پیش‌نمایش دقیق قبل از push: فایل `preview.html` رو توی مرورگر باز کن
