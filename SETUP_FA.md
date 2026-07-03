@@ -1,45 +1,28 @@
-# 🚀 راهنمای نصب پروفایل جدید
+# 🚀 راهنمای راه‌اندازی پروفایل
 
-همه فایل‌های این پوشه (`github-profile/`) باید داخل ریپوی **DoctorGuidance/DoctorGuidance** قرار بگیرن.
-
-## قدم ۱ — کپی فایل‌ها به ریپوی پروفایل
+## قدم ۱ — push
 
 ```bash
-# کلون ریپوی پروفایل (اگه لوکال نداری)
-git clone https://github.com/DoctorGuidance/DoctorGuidance.git
-cd DoctorGuidance
-
-# کپی محتوای این پوشه (README.md، پوشه assets، پوشه .github)
-# بعد:
-git add -A
-git commit -m "✨ Complete profile redesign — medical-tech fusion"
+cd "D:\Ershad Zolfi\programming\coding with Gemini\DoctorGuidance"
 git push origin main
 ```
 
-⚠️ دقت کن پوشه `assets/` و `.github/workflows/snake.yml` هم حتماً push بشن — SVGهای انیمیت از همون ریپو لود میشن.
+## قدم ۲ — فعال‌سازی Actions (یه بار)
 
-## قدم ۲ — فعال‌سازی Snake (یه بار)
+1. **Settings → Actions → General → Workflow permissions** → گزینه **Read and write permissions** → Save.
+2. تب **Actions** → هر سه workflow رو یه بار دستی **Run workflow** بزن:
+   - `Generate Metrics` → فایل `assets/metrics.svg` رو می‌سازه (جایگزین کارت‌های vercel که برای IP ایران بلاک بودن)
+   - `Generate 3D Contribution Graph` → گراف سه‌بعدی night-rainbow
+   - `Generate Snake Animation` → برنچ `output` و مار 🐍
+3. از این به بعد هر شب خودکار آپدیت می‌شن.
 
-1. برو به ریپوی `DoctorGuidance/DoctorGuidance` → تب **Actions** → اگه پرسید، **Enable workflows** رو بزن.
-2. **Settings → Actions → General → Workflow permissions** → گزینه **Read and write permissions** رو انتخاب و Save کن.
-3. تب **Actions** → workflow «Generate Snake Animation» → دکمه **Run workflow**.
-4. بعد از ۱-۲ دقیقه، برنچ `output` ساخته میشه و مار توی پروفایل ظاهر میشه. از این به بعد هر شب خودکار آپدیت میشه.
+## چرا دیگه هیچی broke نمیشه؟
 
-## قدم ۳ — چک نهایی
+کارت‌های قبلی (stats/streak/languages) از vercel.app لود می‌شدن که برای کاربرای ایران بلاکه. الان همه‌چیز **داخل خود ریپو** تولید و کامیت میشه — فقط این‌ها خارجی موندن که رو Cloudflare هستن و مشکلی ندارن: skillicons، shields.io و شمارنده بازدید.
 
-برو به `github.com/DoctorGuidance` — باید ببینی:
+## شخصی‌سازی
 
-- هدر انیمیت با خط ECG متحرک و اسمت با گرادیان رنگی
-- تایپینگ انیمیشن نقش‌هات
-- مانیتور علائم حیاتی (Live Vitals) با ۴ موج متحرک
-- جداکننده‌های ECG بین بخش‌ها
-- استک تکنولوژی با آیکون‌های skillicons
-- استتس‌ها با پس‌زمینه شفاف (توی dark و light هر دو خوب دیده میشه)
-- مار خورنده‌ی contribution
-- بخش فارسی RTL
-
-## نکته‌ها
-
-- اگه خواستی متن هدر یا مقادیر مانیتور رو عوض کنی، فایل‌های `assets/header.svg` و `assets/vitals.svg` رو ادیت کن — همه چیز SVG دست‌سازه و قابل شخصی‌سازیه.
-- آیکون‌های skillicons رو می‌تونی از [skillicons.dev](https://skillicons.dev) کم و زیاد کنی (پارامتر `i=` توی README).
-- کارت‌های stats چون `bg_color=00000000` (شفاف) دارن، توی هر دو تم گیت‌هاب خوب دیده میشن.
+- متن هدر / مقادیر مانیتور: `assets/header.svg` و `assets/vitals.svg`
+- نقش‌های چرخشی: `assets/roles.svg`
+- کارت فارسی (فونت وزیر): `assets/fa-about.svg` — متن‌ها به path تبدیل شدن؛ برای تغییر متن بگو تا دوباره تولیدش کنم
+- آیکون‌های تک‌استک: پارامتر `i=` توی README از [skillicons.dev](https://skillicons.dev)
