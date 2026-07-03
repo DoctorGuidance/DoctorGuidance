@@ -1,23 +1,111 @@
-# 💫 This is DoctorGuidance:
-I am a multi-passionate creator, innovator, and an introverted, meticulous Beholder. My world revolves around the intersection of medicine, technology, and art.<br><br>* 🩺 **Medical Student** on a journey to understand the human body.<br>* 💡 **Entrepreneur** and the ideator behind several business ventures.<br>* 🎨 **Designer** with a passion for creating beautiful and functional things.<br>* 🤖 **Developer** with experience in building various Telegram bots.<br>* 🧠 **AI Enthusiast** fascinated by the future of intelligent systems.<br>* 💻 **Technophile** who is always exploring what's next.<br><br>When I'm not studying or creating, you can find me:<br><br>* 🎮 Gaming or diving into a new 🎬 movie.<br>* 🎙️ Practicing the art of declamation.<br>* 🌌 Enjoying nature, clouds, cats, the sky, and the cosmos.
+<div align="center">
 
+<img src="assets/header.svg" width="100%" alt="Ershad Zolfi — DoctorGuidance — Medicine × Code × Art"/>
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/ErshadZolfi) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ershad.zolfi@gmail.com) 
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=00E5A0&center=true&vCenter=true&width=600&height=45&lines=%F0%9F%A9%BA+Medical+Student;%F0%9F%A4%96+Telegram+Bot+Developer;%F0%9F%A7%A0+AI+Enthusiast;%F0%9F%8E%A8+Designer+%26+Creator;%F0%9F%92%A1+Entrepreneur;%F0%9F%8C%8C+Cosmos+Admirer" alt="Typing animation"/>
 
-# 💻 Tech Stack:
-![DigitalOcean](https://img.shields.io/badge/DigitalOcean-%230167ff.svg?style=for-the-badge&logo=digitalOcean&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=for-the-badge&logo=web3.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) ![Three js](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Adobe Acrobat Reader](https://img.shields.io/badge/Adobe%20Acrobat%20Reader-EC1C24.svg?style=for-the-badge&logo=Adobe%20Acrobat%20Reader&logoColor=white) ![Adobe InDesign](https://img.shields.io/badge/Adobe%20InDesign-49021F?style=for-the-badge&logo=adobeindesign&logoColor=FF3366) ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white) ![Sketch Up](https://img.shields.io/badge/SketchUp-005F9E?style=for-the-badge&logo=sketchup&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![nVIDIA](https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white) ![Xbox](https://img.shields.io/badge/xbox-%23107C10.svg?style=for-the-badge&logo=xbox&logoColor=white) ![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white) ![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white) ![Ubisoft](https://img.shields.io/badge/Ubisoft-%23F5F5F5.svg?style=for-the-badge&logo=Ubisoft&logoColor=black) ![Zigbee](https://img.shields.io/badge/zigbee-%23EB0443.svg?style=for-the-badge&logo=zigbee&logoColor=white) ![Home Assistant](https://img.shields.io/badge/home%20assistant-%2341BDF5.svg?style=for-the-badge&logo=home-assistant&logoColor=white) ![OpenAPI Specification](https://img.shields.io/badge/openapiinitiative-%23000000.svg?style=for-the-badge&logo=openapiinitiative&logoColor=white) ![Notion](https://img.shields.io/badge/Notion-%23000000.svg?style=for-the-badge&logo=notion&logoColor=white) ![Epic Games](https://img.shields.io/badge/epicgames-%23313131.svg?style=for-the-badge&logo=epicgames&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-# 📊 GitHub Stats:
-![](https://nirzak-streak-stats.vercel.app/?user=DoctorGuidance&theme=vue-dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=DoctorGuidance&theme=vue-dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<br/>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=DoctorGuidance&theme=apprentice&no-frame=false&no-bg=false&margin-w=4)
+<a href="https://instagram.com/ErshadZolfi"><img src="https://img.shields.io/badge/Instagram-@ErshadZolfi-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0d1117"/></a>
+&nbsp;
+<a href="mailto:ershad.zolfi@gmail.com"><img src="https://img.shields.io/badge/Email-ershad.zolfi-00e5a0?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117"/></a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=DoctorGuidance&color=00e5a0&style=for-the-badge&label=VISITORS" alt="visitors"/>
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark)
+</div>
 
----
-[![](https://visitcount.itsvg.in/api?id=DoctorGuidance&icon=2&color=0)](https://visitcount.itsvg.in)
+<img src="assets/divider.svg" width="100%" alt=""/>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 🩺 `$ whoami`
+
+```yaml
+name: Ershad Zolfi (DoctorGuidance)
+class: Multi-Passionate Creator
+alignment: Medicine × Technology × Art
+current_quest: Understanding the human body, one system at a time
+side_quests: [Telegram bots, AI experiments, business ventures, design]
+recharge_ritual: [gaming 🎮, movies 🎬, declamation 🎙️, clouds ☁️, cats 🐈, cosmos 🌌]
+rare_trait: Introverted, meticulous Beholder 👁️
+```
+
+I live at the intersection where a **stethoscope meets a terminal** — studying medicine by day, shipping code and ideas by night, and finding beauty in both.
+
+<div dir="rtl" align="right">
+
+### 🇮🇷 درباره من
+
+خالقی چندعلاقه‌ای هستم؛ جایی زندگی می‌کنم که **پزشکی، تکنولوژی و هنر** به هم می‌رسند. روزها آناتومی و فیزیولوژی، شب‌ها کد و ایده. دانشجوی پزشکی‌ام، ربات‌های تلگرامی می‌سازم، طراحی می‌کنم، به هوش مصنوعی و آینده‌اش فکر می‌کنم و کارآفرینی را زندگی می‌کنم. وقت آزادم؟ بازی، فیلم، دکلمه، آسمان، ابرها، گربه‌ها و کیهان. ✨
+
+</div>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## 📡 Live Vitals
+
+<div align="center">
+<img src="assets/vitals.svg" width="100%" alt="Multipassion patient monitor — Medicine, Code, AI, Design"/>
+</div>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## ⚡ Tech Arsenal
+
+<div align="center">
+
+### Languages & Frameworks
+<img src="https://skillicons.dev/icons?i=py,js,php,html,react,nextjs,nodejs,redux,threejs,fastapi,flask&perline=11" alt="languages and frameworks"/>
+
+### Infra, Data & AI
+<img src="https://skillicons.dev/icons?i=mongodb,mysql,redis,nginx,cloudflare,pytorch,tensorflow,git,notion&perline=9" alt="infra, data and AI"/>
+
+### Design & Creative
+<img src="https://skillicons.dev/icons?i=ps,ai,figma,blender&perline=4" alt="design tools"/>
+
+</div>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+## 📊 Lab Results
+
+<div align="center">
+
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=DoctorGuidance&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=00000000&title_color=00e5a0&icon_color=00b4d8&text_color=8fb3cc&ring_color=ff5d8f" alt="GitHub stats"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=DoctorGuidance&layout=compact&hide_border=true&bg_color=00000000&title_color=00e5a0&text_color=8fb3cc&langs_count=8" alt="Top languages"/>
+
+<br/><br/>
+
+<img src="https://nirzak-streak-stats.vercel.app/?user=DoctorGuidance&hide_border=true&background=00000000&ring=00E5A0&fire=FF5D8F&currStreakLabel=00E5A0&currStreakNum=C9E4F5&sideNums=C9E4F5&sideLabels=8FB3CC&dates=5B7A93&stroke=123049" alt="Streak"/>
+
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=DoctorGuidance&hide_border=true&bg_color=00000000&color=8fb3cc&line=00e5a0&point=ff5d8f&area=true&area_color=00e5a0" width="100%" alt="Contribution graph"/>
+
+</div>
+
+## 🐍 Contribution Snake
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/DoctorGuidance/DoctorGuidance/output/snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/DoctorGuidance/DoctorGuidance/output/snake.svg"/>
+  <img src="https://raw.githubusercontent.com/DoctorGuidance/DoctorGuidance/output/snake-dark.svg" width="100%" alt="Snake eating my contributions"/>
+</picture>
+</div>
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
+<div align="center">
+
+### 💊 Prescription of the Day
+
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight&border=true" alt="Dev quote"/>
+
+<br/>
+
+<sub>🩺 <b>Rx:</b> One meaningful commit daily. Take with curiosity. Refills: unlimited.</sub>
+
+<br/><br/>
+
+**`while (alive) { learn(); build(); heal(); }`**
+
+</div>
