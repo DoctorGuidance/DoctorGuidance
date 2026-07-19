@@ -13,6 +13,7 @@ const outputPath = path.join(outputDirectory, "profile-vignette-bloom.webp");
 
 const width = 720;
 const height = 720;
+const cornerRadius = 18;
 const frames = 24;
 const framesPerSecond = 12;
 const frameDelay = Math.round(1000 / framesPerSecond);
@@ -68,8 +69,29 @@ const bytesPerFrame = width * height * 4;
 const stackedFrames = Buffer.allocUnsafe(bytesPerFrame * frames);
 const context = canvas.getContext("2d", { willReadFrequently: true });
 
+function applySubtleCornerMask() {
+  const radius = Math.min(cornerRadius, width / 2, height / 2);
+  context.save();
+  context.globalCompositeOperation = "destination-in";
+  context.fillStyle = "white";
+  context.beginPath();
+  context.moveTo(radius, 0);
+  context.lineTo(width - radius, 0);
+  context.arcTo(width, 0, width, radius, radius);
+  context.lineTo(width, height - radius);
+  context.arcTo(width, height, width - radius, height, radius);
+  context.lineTo(radius, height);
+  context.arcTo(0, height, 0, height - radius, radius);
+  context.lineTo(0, radius);
+  context.arcTo(0, 0, radius, 0, radius);
+  context.closePath();
+  context.fill();
+  context.restore();
+}
+
 for (let frame = 0; frame < frames; frame += 1) {
   renderer.render((frame * 1000) / framesPerSecond);
+  applySubtleCornerMask();
   const pixels = context.getImageData(0, 0, width, height).data;
   Buffer.from(pixels.buffer, pixels.byteOffset, pixels.byteLength).copy(stackedFrames, frame * bytesPerFrame);
   process.stdout.write(`\rRendering Vignette Bloom frame ${String(frame + 1).padStart(2, "0")}/${frames}`);
@@ -86,7 +108,7 @@ await sharp(stackedFrames, {
 })
   .webp({
     quality: 84,
-    alphaQuality: 92,
+    alphaQuality: 100,
     effort: 5,
     loop: 0,
     delay: Array.from({ length: frames }, () => frameDelay),
@@ -95,4 +117,4 @@ await sharp(stackedFrames, {
 
 const metadata = await sharp(outputPath, { animated: true }).metadata();
 process.stdout.write("\n");
-console.log(`Wrote ${path.relative(repositoryRoot, outputPath)} (${metadata.width}x${metadata.pageHeight}, ${metadata.pages} frames)`);
+console.log(`Wrote ${path.relative(repositoryRoot, outputPath)} (${metadata.width}x${metadata.pageHeight}, ${metadata.pages} frames, ${cornerRadius}px corners)`);
