@@ -7,6 +7,14 @@
 </p>
 
 <p align="center">
+  <img src="assets/profile-vignette-bloom.webp" width="420" alt="Animated Vignette Bloom mosaic portrait of DoctorGuidance, rendered with Canvas2D"/>
+</p>
+
+<p align="center">
+  <sub><code>CANVAS2D · MOSAIC 16PX · VIGNETTE + BLOOM · WAVE FIELD</code></sub>
+</p>
+
+<p align="center">
   <a href="https://instagram.com/ErshadZolfi"><img src="https://img.shields.io/badge/Instagram-@ErshadZolfi-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0d1117" alt="Instagram"/></a>
   &nbsp;
   <a href="mailto:ershad.zolfi@gmail.com"><img src="https://img.shields.io/badge/Email-ershad.zolfi-00e5a0?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117" alt="Email"/></a>

@@ -32,4 +32,17 @@ git push origin main
 - نقش‌های چرخشی: `assets/roles.svg`
 - کارت فارسی (فونت وزیر، تبدیل‌شده به path): `assets/fa-about.svg`
 - کارت آمار و ECG سالانه: `assets/stats.svg` و `assets/contrib.svg`
+- پرتره‌ی متحرک Vignette Bloom: `assets/profile-vignette-bloom.webp`
+- موتور و دموی Canvas2D: پوشه‌ی `ascii-editor/`
 - پیش‌نمایش دقیق قبل از push: فایل `preview.html` رو توی مرورگر باز کن
+
+## بازسازی پرتره‌ی متحرک
+
+اگر عکس منبع `ascii-editor/demos/generated/profile-source.png` رو عوض کردی، خروجی جدید رو با این دستور بساز:
+
+```bash
+npm install
+npm run render:profile
+```
+
+این اسکریپت بدون GitHub Actions اجرا می‌شه و فایل `assets/profile-vignette-bloom.webp` رو دوباره تولید می‌کنه.
