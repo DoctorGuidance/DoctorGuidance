@@ -25,6 +25,6 @@ npm install
 npm run render:profile
 ```
 
-The command reads `demos/generated/profile-source.png` and writes `../assets/profile-vignette-bloom.webp` without relying on GitHub Actions.
+The command reads `demos/generated/profile-source.png`, applies a subtle 18px transparent corner mask to every frame, and writes `../assets/profile-vignette-bloom.webp` without relying on GitHub Actions.
 
 Run `npm run validate:canvas` to exercise every primitive, blur path, post-effect, point-light layer, and reveal-mask path against a small raster canvas.
