@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta
+      name="description"
+      content="A dependency-free Canvas2D recreation of the animated Vignette Bloom ASCII-art look."
+    />
+    <title>Vignette Bloom — Canvas2D</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="ambient ambient-a" aria-hidden="true"></div>
+    <div class="ambient ambient-b" aria-hidden="true"></div>
+
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="../README.md" aria-label="Back to DoctorGuidance profile source">
+          <span class="brand-mark" aria-hidden="true">DG</span>
+          <span>
+            <strong>DoctorGuidance</strong>
+            <small>visual lab / 008</small>
+          </span>
+        </a>
+
+        <div class="status" aria-live="polite">
+          <span class="status-dot"></span>
+          <span id="statusText">Loading raster source…</span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <div class="eyebrow"><span>Canvas2D study</span><i></i><span>zero runtime dependencies</span></div>
+        <h1>Vignette <em>Bloom</em></h1>
+        <p>
+          A from-scratch raster pipeline: sampled cells, animated primitives, ordered color grading,
+          bloom, and a soft optical vignette.
+        </p>
+      </section>
+
+      <section class="workspace">
+        <div class="stage-card">
+          <div class="stage-toolbar">
+            <div class="source-tabs" aria-label="Choose source image">
+              <button class="source-tab" data-source="profile" type="button">
+                <span class="source-icon">DG</span>
+                Profile portrait
+              </button>
+              <button class="source-tab active" data-source="reference" type="button">
+                <span class="source-icon">08</span>
+                21st reference
+              </button>
+            </div>
+            <button class="icon-button" id="playButton" type="button" aria-label="Pause animation">
+              <span id="playIcon">Ⅱ</span>
+            </button>
+          </div>
+
+          <div class="canvas-wrap" id="canvasWrap">
+            <canvas id="artCanvas" width="960" height="540" aria-label="Animated Vignette Bloom rendering"></canvas>
+            <div class="canvas-glass" aria-hidden="true"></div>
+            <div class="canvas-label">
+              <span id="sourceLabel">REF–008 / MOSAIC</span>
+              <span>LIVE RASTER</span>
+            </div>
+          </div>
+
+          <div class="stage-footer">
+            <span><i class="legend-dot legend-blue"></i>16 px sampling grid</span>
+            <span><i class="legend-dot legend-white"></i>60% wave field</span>
+            <span><i class="legend-dot legend-violet"></i>vignette + bloom</span>
+          </div>
+        </div>
+
+        <aside class="controls" aria-label="Render controls">
+          <div class="controls-heading">
+            <div>
+              <span>Effect controls</span>
+              <strong>Vignette Bloom</strong>
+            </div>
+            <span class="live-pill">LIVE</span>
+          </div>
+
+          <label class="field select-field">
+            <span>Render mode</span>
+            <select id="renderMode"></select>
+          </label>
+
+          <label class="field">
+            <span>Cell size <output id="cellSizeValue">16px</output></span>
+            <input id="cellSize" type="range" min="6" max="32" value="16" />
+          </label>
+
+          <label class="field">
+            <span>Vignette <output id="vignetteValue">38%</output></span>
+            <input id="vignette" type="range" min="0" max="100" value="38" />
+          </label>
+
+          <label class="field">
+            <span>Bloom <output id="bloomValue">25%</output></span>
+            <input id="bloom" type="range" min="0" max="100" value="25" />
+          </label>
+
+          <label class="field">
+            <span>Wave energy <output id="intensityValue">60%</output></span>
+            <input id="intensity" type="range" min="0" max="100" value="60" />
+          </label>
+
+          <label class="field">
+            <span>Animation speed <output id="speedValue">100%</output></span>
+            <input id="speed" type="range" min="0" max="200" value="100" />
+          </label>
+
+          <div class="parameter-row">
+            <div><span>Brightness</span><strong>+12</strong></div>
+            <div><span>Contrast</span><strong>115</strong></div>
+            <div><span>Coverage</span><strong>100%</strong></div>
+          </div>
+
+          <button class="export-button" id="exportButton" type="button">
+            <span>Export current frame</span>
+            <strong>PNG ↗</strong>
+          </button>
+
+          <p class="note">
+            GitHub profile READMEs cannot execute JavaScript. The animated portrait in the profile is
+            pre-rendered from this same engine.
+          </p>
+        </aside>
+      </section>
+
+      <footer>
+        <span>Built for DoctorGuidance</span>
+        <span class="footer-line"></span>
+        <code>while (alive) { learn(); build(); heal(); }</code>
+      </footer>
+    </main>
+
+    <script type="module">
+      import {
+        DEFAULT_PARAMS,
+        RENDER_MODES,
+        VignetteBloomRenderer,
+        createParams,
+        loadBrowserImage,
+      } from "./vignette-bloom.mjs";
+
+      const canvas = document.querySelector("#artCanvas");
+      const wrap = document.querySelector("#canvasWrap");
+      const statusText = document.querySelector("#statusText");
+      const sourceLabel = document.querySelector("#sourceLabel");
+      const playButton = document.querySelector("#playButton");
+      const playIcon = document.querySelector("#playIcon");
+      const renderMode = document.querySelector("#renderMode");
+      const params = createParams(DEFAULT_PARAMS);
+      const renderer = new VignetteBloomRenderer(canvas, { params });
+      let running = true;
+      let currentSource = "reference";
+      let lastTime = performance.now();
+      let frameCount = 0;
+      let lastFpsSample = lastTime;
+
+      const sources = {
+        reference: {
+          url: "./demos/generated/ref-008.webp",
+          width: 960,
+          height: 540,
+          label: "REF–008",
+        },
+        profile: {
+          url: "./demos/generated/profile-source.png",
+          width: 720,
+          height: 720,
+          label: "DOCTORGUIDANCE",
+        },
+      };
+
+      RENDER_MODES.forEach((mode) => {
+        const option = document.createElement("option");
+        option.value = mode;
+        option.textContent = mode[0].toUpperCase() + mode.slice(1);
+        option.selected = mode === params.renderMode;
+        renderMode.append(option);
+      });
+
+      async function setSource(name) {
+        const config = sources[name] || sources.reference;
+        currentSource = name;
+        statusText.textContent = "Sampling source pixels…";
+        document.querySelectorAll(".source-tab").forEach((button) => {
+          button.classList.toggle("active", button.dataset.source === name);
+        });
+        const image = await loadBrowserImage(config.url);
+        renderer.resize(config.width, config.height).setSource(image);
+        wrap.style.setProperty("--stage-ratio", `${config.width} / ${config.height}`);
+        sourceLabel.textContent = `${config.label} / ${renderer.params.renderMode.toUpperCase()}`;
+        renderer.render(performance.now());
+        statusText.textContent = "Canvas pipeline online";
+      }
+
+      function animationLoop(time) {
+        if (running) renderer.render(time);
+        frameCount += 1;
+        if (time - lastFpsSample > 1000) {
+          const fps = Math.round((frameCount * 1000) / (time - lastFpsSample));
+          statusText.textContent = `Canvas pipeline online · ${fps} fps`;
+          frameCount = 0;
+          lastFpsSample = time;
+        }
+        lastTime = time;
+        requestAnimationFrame(animationLoop);
+      }
+
+      function bindRange(id, outputId, suffix, onInput) {
+        const input = document.querySelector(`#${id}`);
+        const output = document.querySelector(`#${outputId}`);
+        input.addEventListener("input", () => {
+          output.value = `${input.value}${suffix}`;
+          onInput(Number(input.value));
+          if (!running) renderer.render(lastTime);
+        });
+      }
+
+      bindRange("cellSize", "cellSizeValue", "px", (value) => renderer.setParams({ cellSize: value }));
+      bindRange("vignette", "vignetteValue", "%", (value) => renderer.setParams({
+        pfx: { vignette: { enabled: value > 0, intensity: value } },
+      }));
+      bindRange("bloom", "bloomValue", "%", (value) => renderer.setParams({
+        pfx: { bloom: { enabled: value > 0, intensity: value } },
+      }));
+      bindRange("intensity", "intensityValue", "%", (value) => renderer.setParams({
+        animIntensity: { enabled: value > 0, intensity: value },
+      }));
+      bindRange("speed", "speedValue", "%", (value) => renderer.setParams({
+        animSpeed: { enabled: value > 0, intensity: value },
+      }));
+
+      renderMode.addEventListener("change", () => {
+        renderer.setParams({ renderMode: renderMode.value });
+        sourceLabel.textContent = `${sources[currentSource].label} / ${renderMode.value.toUpperCase()}`;
+        if (!running) renderer.render(lastTime);
+      });
+
+      document.querySelectorAll(".source-tab").forEach((button) => {
+        button.addEventListener("click", () => setSource(button.dataset.source));
+      });
+
+      playButton.addEventListener("click", () => {
+        running = !running;
+        playIcon.textContent = running ? "Ⅱ" : "▶";
+        playButton.setAttribute("aria-label", running ? "Pause animation" : "Play animation");
+        statusText.textContent = running ? "Canvas pipeline online" : "Animation paused";
+        if (!running) renderer.render(lastTime);
+      });
+
+      document.querySelector("#exportButton").addEventListener("click", () => {
+        renderer.render(lastTime);
+        const link = document.createElement("a");
+        link.download = `vignette-bloom-${currentSource}.png`;
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+      });
+
+      const requestedSource = new URLSearchParams(location.search).get("source");
+      setSource(requestedSource === "profile" ? "profile" : "reference").then(() => {
+        requestAnimationFrame(animationLoop);
+      }).catch((error) => {
+        statusText.textContent = error.message;
+        console.error(error);
+      });
+
+      window.vignetteBloom = { renderer, sources, setSource };
+    </script>
+  </body>
+</html>
