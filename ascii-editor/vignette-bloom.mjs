@@ -32,7 +32,7 @@ export const DEFAULT_PARAMS = {
   bgColor: "#05080d",
   bgBlur: 12,
   bgOpacity: 90,
-  cellSize: 16,
+  cellSize: 8,
   coverage: 100,
   invert: false,
   styleBlend: "source-over",
@@ -394,7 +394,7 @@ export class VignetteBloomRenderer {
   samplePhoto(photo) {
     const width = this.canvas.width;
     const height = this.canvas.height;
-    const cellSize = Math.max(3, Math.round(this.params.cellSize || 16));
+    const cellSize = Math.max(3, Math.round(this.params.cellSize || 8));
     const columns = Math.ceil(width / cellSize);
     const rows = Math.ceil(height / cellSize);
     const cacheKey = `${width}:${height}:${cellSize}:${columns}:${rows}`;

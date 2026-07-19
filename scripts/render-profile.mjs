@@ -23,7 +23,7 @@ const params = createParams({
   bgColor: "#05080d",
   bgBlur: 12,
   bgOpacity: 90,
-  cellSize: 16,
+  cellSize: 8,
   coverage: 100,
   invert: false,
   brightness: 12,

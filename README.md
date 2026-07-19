@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <sub><code>CANVAS2D · MOSAIC 16PX · VIGNETTE + BLOOM · WAVE FIELD</code></sub>
+  <sub><code>CANVAS2D · MOSAIC 8PX · VIGNETTE + BLOOM · WAVE FIELD</code></sub>
 </p>
 
 <p align="center">
