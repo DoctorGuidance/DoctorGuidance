@@ -74,6 +74,28 @@ I live at the intersection where a **stethoscope meets a terminal** — studying
 
 <img src="assets/divider.svg" width="100%" alt=""/>
 
+## 🚀 Open Source Core Engineering & Impact
+
+<p align="center">
+  <a href="https://github.com/MHSanaei/3x-ui/pull/7044"><img src="https://img.shields.io/badge/3x--ui-Merged_%237044-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="3x-ui Merged"/></a>
+  &nbsp;
+  <a href="https://github.com/fastify/fastify-static/pull/623"><img src="https://img.shields.io/badge/fastify--static-PR_%23623-00e5a0?style=for-the-badge&logo=fastify&logoColor=white&labelColor=0d1117" alt="fastify-static PR"/></a>
+  &nbsp;
+  <a href="https://github.com/fastify/fastify-cors/pull/427"><img src="https://img.shields.io/badge/fastify--cors-PR_%23427-00e5a0?style=for-the-badge&logo=fastify&logoColor=white&labelColor=0d1117" alt="fastify-cors PR"/></a>
+  &nbsp;
+  <a href="https://github.com/elysiajs/elysia/pulls?q=author:DoctorGuidance"><img src="https://img.shields.io/badge/elysiajs-4_PRs_Open-00e5a0?style=for-the-badge&logo=bun&logoColor=white&labelColor=0d1117" alt="elysiajs PRs"/></a>
+</p>
+
+| Target Project | Focus & Technical Impact | Status |
+| :--- | :--- | :---: |
+| [**MHSanaei/3x-ui**](https://github.com/MHSanaei/3x-ui) | Subscription token parser & single-bracket token mapper | 🟣 [Merged #7044](https://github.com/MHSanaei/3x-ui/pull/7044) |
+| [**fastify/fastify-static**](https://github.com/fastify/fastify-static) | Directory index root priority order resolution (`wildcard: false`) | 🟢 [Open #623](https://github.com/fastify/fastify-static/pull/623) |
+| [**fastify/fastify-cors**](https://github.com/fastify/fastify-cors) | RFC 7230 Vary header optional whitespace (OWS) tokenizer compliance | 🟢 [Open #427](https://github.com/fastify/fastify-cors/pull/427) |
+| [**elysiajs/elysia**](https://github.com/elysiajs/elysia) | Bun adapter headers preservation (Array subclasses), RPC context params, WeakMap listener cleanup | 🟢 [4 PRs Active](https://github.com/elysiajs/elysia/pulls?q=author:DoctorGuidance) |
+| [**typeorm / knex / sequelize**](https://github.com/DoctorGuidance) | SQL dialect query generation edge cases, migration schemas, and driver stability | 🟢 [12 PRs Active](https://github.com/DoctorGuidance) |
+
+<img src="assets/divider.svg" width="100%" alt=""/>
+
 ## 📊 Lab Results
 
 <p align="center">
