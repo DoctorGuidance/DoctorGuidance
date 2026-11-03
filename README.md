@@ -79,6 +79,8 @@ I live at the intersection where a **stethoscope meets a terminal** — studying
 <p align="center">
   <a href="https://github.com/MHSanaei/3x-ui/pull/7044"><img src="https://img.shields.io/badge/3x--ui-Merged_%237044-8957e5?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="3x-ui Merged"/></a>
   &nbsp;
+  <a href="https://github.com/fastify/fastify-compress/pull/442"><img src="https://img.shields.io/badge/fastify--compress-PR_%23442-00e5a0?style=for-the-badge&logo=fastify&logoColor=white&labelColor=0d1117" alt="fastify-compress PR"/></a>
+  &nbsp;
   <a href="https://github.com/fastify/fastify-cookie/pull/384"><img src="https://img.shields.io/badge/fastify--cookie-PR_%23384-00e5a0?style=for-the-badge&logo=fastify&logoColor=white&labelColor=0d1117" alt="fastify-cookie PR"/></a>
   &nbsp;
   <a href="https://github.com/fastify/fastify-static/pull/623"><img src="https://img.shields.io/badge/fastify--static-PR_%23623-00e5a0?style=for-the-badge&logo=fastify&logoColor=white&labelColor=0d1117" alt="fastify-static PR"/></a>
@@ -91,6 +93,7 @@ I live at the intersection where a **stethoscope meets a terminal** — studying
 | Target Project | Focus & Technical Impact | Status |
 | :--- | :--- | :---: |
 | [**MHSanaei/3x-ui**](https://github.com/MHSanaei/3x-ui) | Subscription token parser & single-bracket token mapper | 🟣 [Merged #7044](https://github.com/MHSanaei/3x-ui/pull/7044) |
+| [**fastify/fastify-compress**](https://github.com/fastify/fastify-compress) | Inherit global options when route options are partially defined | 🟢 [Open #442](https://github.com/fastify/fastify-compress/pull/442) |
 | [**fastify/fastify-cookie**](https://github.com/fastify/fastify-cookie) | Standalone `parse` and `serialize` synchronous ESM resolution | 🟢 [Open #384](https://github.com/fastify/fastify-cookie/pull/384) |
 | [**fastify/fastify-static**](https://github.com/fastify/fastify-static) | Directory index root priority order resolution (`wildcard: false`) | 🟢 [Open #623](https://github.com/fastify/fastify-static/pull/623) |
 | [**fastify/fastify-cors**](https://github.com/fastify/fastify-cors) | RFC 7230 Vary header optional whitespace (OWS) tokenizer compliance | 🟢 [Open #427](https://github.com/fastify/fastify-cors/pull/427) |
